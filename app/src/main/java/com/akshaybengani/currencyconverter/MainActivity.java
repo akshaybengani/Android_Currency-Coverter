@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         EditText valueDoller;$
         double amountRs,amountDoller;
         valueDoller=(EditText) findViewById(R.id.doller);
-        amountDoller=Double.parseDouble(valueDoller.getText().toString());
+        amountDoller=Double.parseDouble(valueDoller.getText().toString());   //it converts the string value inserted by user to double value
         amountRs=amountDoller*64;
         Toast.makeText(MainActivity.this,""+amountRs, Toast.LENGTH_SHORT).show();
 
